@@ -19,5 +19,5 @@ consumers << consumer
 end
 
 start = Time.now
-(1..100).each {|y| x.publish("HELLO #{y}", :routing_key => "testq")}
+(1..1000).each {|y| x.publish("HELLO #{y}", :routing_key => "testq")}
 p "PUBLISHED in #{Time.now - start}"
