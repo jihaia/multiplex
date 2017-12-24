@@ -42,6 +42,7 @@ gem 'dnb-direct-ruby', path: '../dnb-direct-ruby'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rb-readline'
 end
 
 group :development do
