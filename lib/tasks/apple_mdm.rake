@@ -10,7 +10,6 @@ namespace :apple do
 
   namespace :mdm do
 
-<<<<<<< HEAD
     desc 'Loads seeds'
     task load_seeds: :environment do
       ctr = 0
@@ -228,45 +227,6 @@ namespace :apple do
         p "Finished #{ctr} in #{diff}[s]"
     end # match
 
-=======
-    desc 'Process MB1'
-    task mb1: :environment do
-      ctr = 0
-      started_at = Time.now
-      abs_start = Time.now
-
-        mb_num = 2
-
-        (1..1).each do |idx|
-          val = idx.to_s.rjust(2, '0')
-          file_name = File.join("/Volumes/D&B Passport/apple/mdm-project/matched/ame/AME-MB2-CONSOLIDATED-CSV", "JP-#{val}.csv")
-            p file_name
-          CSV.foreach(file_name, headers: true, header_converters: :symbol, encoding: 'UTF-8') do |row|
-
-              entry = row.to_hash
-              # p entry
-              sql = "update ame_crosswalks set confidence_code = #{entry[:confidence_code]}, match_grade = '#{entry[:match_grade]}', duns_number = '#{entry[:match_duns]}' where pk = '#{mb_num}-#{entry[:lookup_number]}';"
-              # p sql
-              ActiveRecord::Base.connection.execute(sql)
-
-              step = 100
-              ctr += 1
-              if ctr % step == 0
-                diff = Time.now - started_at
-                p "Processed #{step} rows in #{diff}[sec] - Total Processed: #{ctr}"
-                started_at = Time.now
-              end
-
-              # break
-
-          end # csv.foreach
-
-        end
-
-        diff = Time.now - abs_start
-        p "Finalized run of #{ctr} rows in #{diff}[sec]"
-    end # mb1
->>>>>>> 92d466102e6bfbbf78a32ba5c6e4e536d1303dd0
 
   end # mdm
 

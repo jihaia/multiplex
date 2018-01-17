@@ -57,7 +57,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     bindex (0.5.0)
     builder (3.2.3)
-    bunny (2.7.2)
+    bunny (2.8.0)
       amq-protocol (>= 2.2.0)
     byebug (9.1.0)
     coercible (1.0.0)
@@ -104,11 +104,11 @@ GEM
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.10.3)
+    minitest (5.11.1)
     multi_json (1.12.2)
     multipart-post (2.0.0)
-    mysql2 (0.4.6)
-    nio4r (2.1.0)
+    mysql2 (0.4.10)
+    nio4r (2.2.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     puma (3.11.0)
@@ -142,7 +142,8 @@ GEM
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    sass (3.5.3)
+    rb-readline (0.5.5)
+    sass (3.5.5)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -173,7 +174,7 @@ GEM
     turbolinks-source (5.0.3)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
-    uglifier (3.2.0)
+    uglifier (4.1.2)
       execjs (>= 0.3.0, < 3)
     virtus (1.0.5)
       axiom-types (~> 0.1)
@@ -200,7 +201,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
-  mysql2
+  mysql2 (~> 0.4.9)
   puma (~> 3.0)
   rails (~> 5.0.1)
   rb-readline
@@ -213,4 +214,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

@@ -10,6 +10,42 @@ namespace :apple do
 
   namespace :ent_us do
 
+    desc 'Rematch the 13K'
+    task rematch: :environment do
+      ctr = 0
+      started_at = Time.now
+      DnB::Direct::Plus.use_credentials 'lssJnyFNpqud7iX92IjUJuBAGR4DNptk', 'MpXD2l66jwbW3QCS'
+      target_path = File.join(Rails.root, "tmp", "us_ent_rematch")
+
+      CSV.open(File.join(Rails.root, "tmp", "us_ent_rematch_exceptions.csv"), "w") do |exceptions|
+        CSV.foreach(File.join(Rails.root, "tmp", "us_ent_rematch.csv"), headers: true, header_converters: :symbol, encoding: 'ISO-8859-1') do |row|
+        duns = row[:matchcandidates0organizationduns]
+        pd = "%09d" % duns
+        res = DnB::Direct::Plus::Content.plus_executives(duns: pd)
+        if res["organization"].nil?
+          exceptions << [
+            pd,
+            res["error"]["errorCode"],
+            res["error"]["errorMessage"]
+          ]
+          exceptions.flush
+        else
+          out = { organization: res["organization"] }
+          File.open(File.join(target_path, "#{pd}.json"), 'w') {|f| f.write(out.to_json) }
+        end
+
+        ctr += 1
+        step = 100
+        if ctr % step == 0
+          diff = Time.now - started_at
+          p "Processed #{step} rows in #{diff}[ms] - Total Processed: #{ctr}"
+          started_at = Time.now
+        end
+      end
+      end
+      p "Total rows processed were #{ctr}"
+    end
+
     desc 'Matches file to db'
     task count: :environment do
       ctr = 0

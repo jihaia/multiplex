@@ -10,6 +10,22 @@ namespace :apple do
 
   namespace :mdm do
 
+    desc "Repair CAN JSON"
+    task can_repair: :environment do
+      ctr = 0
+      base_path = "/Users/jihaia/Downloads/appends"
+      target_path = "/Users/jihaia/Downloads/appends-json"
+      Dir.glob(File.join(base_path, "*.json")) do |filename|
+        ctr += 1
+        hash = eval(File.read(filename))
+        File.open(File.join(target_path, filename.split('/').last), 'w') {|f| f.write(hash.to_json) }
+
+        if ctr % 100 == 0
+          p "Processed #{ctr} files"
+        end # if
+      end
+    end
+
     desc 'Process CAN ETT'
     task can_ett: :environment do
       ctr = 0
