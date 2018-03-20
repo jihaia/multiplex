@@ -1,7 +1,7 @@
 package configuration for libffi is not found
 have_header: checking for ffi.h... -------------------- no
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -12,7 +12,7 @@ checked program was:
 6: }
 /* end */
 
-"clang -E -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 conftest.c:3:10: fatal error: 'ffi.h' file not found
 #include <ffi.h>
          ^~~~~~~
@@ -28,7 +28,7 @@ checked program was:
 
 find_header: checking for ffi.h in /usr/local/include,/usr/include/ffi... -------------------- yes
 
-"clang -E -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 conftest.c:3:10: fatal error: 'ffi.h' file not found
 #include <ffi.h>
          ^~~~~~~
@@ -40,7 +40,7 @@ checked program was:
 3: #include <ffi.h>
 /* end */
 
-"clang -E -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/local/include conftest.c -o conftest.i"
+"clang -E -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/local/include conftest.c -o conftest.i"
 conftest.c:3:10: fatal error: 'ffi.h' file not found
 #include <ffi.h>
          ^~~~~~~
@@ -52,7 +52,7 @@ checked program was:
 3: #include <ffi.h>
 /* end */
 
-"clang -E -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/include/ffi conftest.c -o conftest.i"
+"clang -E -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/include/ffi conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -64,7 +64,7 @@ checked program was:
 
 have_library: checking for ffi_call() in -lffi... -------------------- yes
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib     -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -88,7 +88,7 @@ checked program was:
 
 have_func: checking for ffi_prep_closure()... -------------------- yes
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'ffi_prep_closure'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_closure; return !p; }
                                                         ^
@@ -110,7 +110,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_closure; return !p; }
 /* end */
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -133,7 +133,7 @@ checked program was:
 
 have_func: checking for ffi_raw_call()... -------------------- no
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'ffi_raw_call'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return !p; }
                                                         ^
@@ -155,10 +155,10 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_raw_call; return !p; }
 /* end */
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 Undefined symbols for architecture x86_64:
   "_ffi_raw_call", referenced from:
-      _t in conftest-177757.o
+      _t in conftest-d022f3.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -183,7 +183,7 @@ checked program was:
 
 have_header: checking for shlwapi.h... -------------------- no
 
-"clang -E -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"clang -E -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
 conftest.c:3:10: fatal error: 'shlwapi.h' file not found
 #include <shlwapi.h>
          ^~~~~~~~~~~
@@ -199,7 +199,7 @@ checked program was:
 
 have_func: checking for rb_thread_blocking_region()... -------------------- no
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_blocking_region'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return !p; }
                                                         ^
@@ -221,10 +221,10 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return !p; }
 /* end */
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 Undefined symbols for architecture x86_64:
   "_rb_thread_blocking_region", referenced from:
-      _t in conftest-17e678.o
+      _t in conftest-9f3530.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:
@@ -249,7 +249,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_call_with_gvl'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return !p; }
                                                         ^
@@ -271,7 +271,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return !p; }
 /* end */
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -294,7 +294,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_without_gvl()... -------------------- yes
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'rb_thread_call_without_gvl'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return !p; }
                                                         ^
@@ -316,7 +316,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_without_gvl; return !p; }
 /* end */
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -339,7 +339,7 @@ checked program was:
 
 have_func: checking for ffi_prep_cif_var()... -------------------- no
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 conftest.c:13:57: error: use of undeclared identifier 'ffi_prep_cif_var'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_cif_var; return !p; }
                                                         ^
@@ -361,10 +361,10 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))ffi_prep_cif_var; return !p; }
 /* end */
 
-"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -lgmp -ldl -lobjc "
+"clang -o conftest -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17 -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/ruby/backward -I/Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0 -I. -I/usr/include/ffi -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib    -lffi  -lruby-static -framework CoreFoundation -lffi  -lpthread -ldl -lobjc "
 Undefined symbols for architecture x86_64:
   "_ffi_prep_cif_var", referenced from:
-      _t in conftest-fb8736.o
+      _t in conftest-67bfc3.o
 ld: symbol(s) not found for architecture x86_64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 checked program was:

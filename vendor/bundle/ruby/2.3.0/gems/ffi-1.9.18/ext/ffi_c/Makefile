@@ -12,12 +12,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0
+topdir = /Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/jihaia/.rbenv/versions/2.3.0/include/ruby-2.3.0/x86_64-darwin17
+arch_hdrdir = /Users/jihaia/.rbenv/versions/2.3.1/include/ruby-2.3.0/x86_64-darwin17
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/jihaia/.rbenv/versions/2.3.0
+prefix = $(DESTDIR)/Users/jihaia/.rbenv/versions/2.3.1
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20171013-13098-kq8fn4
-sitelibdir = $(DESTDIR)./.gem.20171013-13098-kq8fn4
+sitearchdir = $(DESTDIR)./.gem.20180301-12865-1m0cdxk
+sitelibdir = $(DESTDIR)./.gem.20180301-12865-1m0cdxk
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -83,9 +83,9 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS)  -O3 -Wno-error=shorten-64-to-32  -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) -I/usr/include/ffi
 DEFS     = 
-CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\" -I/Users/jihaia/.rbenv/versions/2.3.0/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\" -I/Users/jihaia/.rbenv/versions/2.3.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
-ldflags  = -L. -L/Users/jihaia/.rbenv/versions/2.3.0/lib  -fstack-protector -L/usr/local/lib
+ldflags  = -L. -L/Users/jihaia/.rbenv/versions/2.3.1/lib  -fstack-protector -L/usr/local/lib
 dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
@@ -134,7 +134,7 @@ extout =
 extout_prefix = 
 target_prefix = 
 LOCAL_LIBS = 
-LIBS =  -lffi  -lpthread -lgmp -ldl -lobjc 
+LIBS =  -lffi  -lpthread -ldl -lobjc 
 ORIG_SRCS = Thread.c Buffer.c DynamicLibrary.c Variadic.c ffi.c Pointer.c MemoryPointer.c Platform.c LongDouble.c Function.c MappedType.c Type.c Types.c StructLayout.c DataConverter.c ArrayType.c StructByReference.c LastError.c Struct.c Call.c MethodHandle.c AbstractMemory.c FunctionInfo.c ClosurePool.c StructByValue.c
 SRCS = $(ORIG_SRCS) 
 OBJS = Thread.o Buffer.o DynamicLibrary.o Variadic.o ffi.o Pointer.o MemoryPointer.o Platform.o LongDouble.o Function.o MappedType.o Type.o Types.o StructLayout.o DataConverter.o ArrayType.o StructByReference.o LastError.o Struct.o Call.o MethodHandle.o AbstractMemory.o FunctionInfo.o ClosurePool.o StructByValue.o

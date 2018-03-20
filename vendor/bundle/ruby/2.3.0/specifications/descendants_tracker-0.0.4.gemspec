@@ -2,36 +2,36 @@
 # stub: descendants_tracker 0.0.4 ruby lib
 
 Gem::Specification.new do |s|
-  s.name = "descendants_tracker".freeze
+  s.name = "descendants_tracker"
   s.version = "0.0.4"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
-  s.require_paths = ["lib".freeze]
-  s.authors = ["Dan Kubb".freeze, "Piotr Solnica".freeze, "Markus Schirp".freeze]
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.require_paths = ["lib"]
+  s.authors = ["Dan Kubb", "Piotr Solnica", "Markus Schirp"]
   s.date = "2014-03-27"
-  s.description = "Module that adds descendant tracking to a class".freeze
-  s.email = ["dan.kubb@gmail.com".freeze, "piotr.solnica@gmail.com".freeze, "mbj@schirp-dso.com".freeze]
-  s.extra_rdoc_files = ["LICENSE".freeze, "README.md".freeze, "CONTRIBUTING.md".freeze, "TODO".freeze]
-  s.files = ["CONTRIBUTING.md".freeze, "LICENSE".freeze, "README.md".freeze, "TODO".freeze]
-  s.homepage = "https://github.com/dkubb/descendants_tracker".freeze
-  s.licenses = ["MIT".freeze]
-  s.rubygems_version = "2.6.14".freeze
-  s.summary = "Module that adds descendant tracking to a class".freeze
+  s.description = "Module that adds descendant tracking to a class"
+  s.email = ["dan.kubb@gmail.com", "piotr.solnica@gmail.com", "mbj@schirp-dso.com"]
+  s.extra_rdoc_files = ["LICENSE", "README.md", "CONTRIBUTING.md", "TODO"]
+  s.files = ["CONTRIBUTING.md", "LICENSE", "README.md", "TODO"]
+  s.homepage = "https://github.com/dkubb/descendants_tracker"
+  s.licenses = ["MIT"]
+  s.rubygems_version = "2.5.1"
+  s.summary = "Module that adds descendant tracking to a class"
 
-  s.installed_by_version = "2.6.14" if s.respond_to? :installed_by_version
+  s.installed_by_version = "2.5.1" if s.respond_to? :installed_by_version
 
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<thread_safe>.freeze, [">= 0.3.1", "~> 0.3"])
-      s.add_development_dependency(%q<bundler>.freeze, [">= 1.5.3", "~> 1.5"])
+      s.add_runtime_dependency(%q<thread_safe>, [">= 0.3.1", "~> 0.3"])
+      s.add_development_dependency(%q<bundler>, [">= 1.5.3", "~> 1.5"])
     else
-      s.add_dependency(%q<thread_safe>.freeze, [">= 0.3.1", "~> 0.3"])
-      s.add_dependency(%q<bundler>.freeze, [">= 1.5.3", "~> 1.5"])
+      s.add_dependency(%q<thread_safe>, [">= 0.3.1", "~> 0.3"])
+      s.add_dependency(%q<bundler>, [">= 1.5.3", "~> 1.5"])
     end
   else
-    s.add_dependency(%q<thread_safe>.freeze, [">= 0.3.1", "~> 0.3"])
-    s.add_dependency(%q<bundler>.freeze, [">= 1.5.3", "~> 1.5"])
+    s.add_dependency(%q<thread_safe>, [">= 0.3.1", "~> 0.3"])
+    s.add_dependency(%q<bundler>, [">= 1.5.3", "~> 1.5"])
   end
 end

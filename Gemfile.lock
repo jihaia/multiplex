@@ -139,6 +139,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (12.3.0)
+    rake-progressbar (0.0.5)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -204,6 +205,7 @@ DEPENDENCIES
   mysql2 (~> 0.4.9)
   puma (~> 3.0)
   rails (~> 5.0.1)
+  rake-progressbar
   rb-readline
   sass-rails (~> 5.0)
   spring
