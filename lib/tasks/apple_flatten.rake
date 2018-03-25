@@ -80,10 +80,11 @@ class Converter
           # to be a laborious task given the potential number of keys. That said, we should
           # test each newly supplied key against a list of failed keys to eliminate
           # unneccessary processing.
-          unless already_missing?(key, missing)
+          #unless already_missing?(key, missing)
             data = get_data(obj, key)
-            data.nil? ?  missing << key : row.merge!(key => data)
-          end
+            row.merge!(key => data)
+            #data.nil? ?  missing << key : row.merge!(key => data)
+          #end
         end
 
         csv << row.values
@@ -157,9 +158,11 @@ class Converter
     keys = key.split(".")
     val = nil
 
+    # monitor = (key == 'organization.dunsControlStatus.isTelephoneDisconnected')
+
     # loop through each facet of the key
     keys.each { |key|
-      # p key
+      # p key if monitor
       if key.to_f < 0
         p "ERROR with negative key #{key}"
       end
@@ -172,8 +175,10 @@ class Converter
         else
           lookup = lookup[key]
         end
+
+        # p lookup if monitor
       rescue => e
-        # p "[OOPS] #{key} in #{keys} failed"
+        # p "[OOPS] #{key} in #{keys} failed" if monitor
       end
     }
 
@@ -187,9 +192,9 @@ class Converter
 
     # Remove newline characters on the way out.
     begin
-      if lookup.is_a? String and !lookup.nil?
-        lookup.gsub!(/\n/, "")
-      end
+      #if lookup.is_a? String and !lookup.nil?
+      #    lookup.gsub!(/\n/, "")
+      # end
     rescue Exception => e
       p "ERROR in get_data method, removing new lines: #{e.message}"
     end
@@ -313,8 +318,10 @@ namespace :apple do
 
   desc 'Joins the json appends'
   task :join do
-    folder = '/Users/jihaia/Downloads/F1k G500 not loaded-030718-append'
-    target = '/Users/jihaia/Downloads/F1k G500 not loaded-030718-append.json'
+    # folder = '/Users/jihaia/Downloads/F1k G500 not loaded-030718-append'
+    folder = '/Users/jihaia/Downloads/triage'
+    # target = '/Users/jihaia/Downloads/F1k G500 not loaded-030718-append.json'
+    target = '/Users/jihaia/Downloads/triage.json'
     ctr = 1
 
     Dir.glob(File.join(folder, "*.json")) do |filename|
@@ -331,7 +338,9 @@ namespace :apple do
   task json2csv: :environment do
     keys = []
     entries = []
+    # file_in = '/Users/jihaia/Downloads/triage/in.json'
     file_in = '/Users/jihaia/Downloads/F1k G500 not loaded-030718-append.json'
+    # file_out = '/Users/jihaia/Downloads/triage.csv'
     file_out = '/Users/jihaia/Downloads/F1k G500 not loaded-030718-append.csv'
 
     Converter.new(file_in, file_out).execute
