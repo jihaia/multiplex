@@ -3,10 +3,10 @@ require 'csv'
 @ctr = 0
 
 def process_item(queue_item)
-  # p "Processing #{queue_item[:apple_identifier]}"
-  @ctr += 1
-  if @ctr % 1000 == 0
-    p "Processed #{@ctr} rows"
+  begin
+
+  rescue => ex
+    @queue.push(queue_item)
   end
 end
 

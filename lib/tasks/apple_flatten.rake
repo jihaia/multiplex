@@ -339,9 +339,9 @@ namespace :apple do
     keys = []
     entries = []
     # file_in = '/Users/jihaia/Downloads/triage/in.json'
-    file_in = '/Users/jihaia/Downloads/F1k G500 not loaded-030718-append.json'
+    file_in = File.join(Rails.root, 'tmp', 'file', '13k_rerun.json')
     # file_out = '/Users/jihaia/Downloads/triage.csv'
-    file_out = '/Users/jihaia/Downloads/F1k G500 not loaded-030718-append.csv'
+    file_out = File.join(Rails.root, 'tmp', 'file', '13k_rerun.csv')
 
     Converter.new(file_in, file_out).execute
 
